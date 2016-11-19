@@ -9,9 +9,9 @@ Side note: I think the S7 has one of the best cameras on a smartphone, but its p
 ## Usage
 Clone the repo or copy the `dedupe` file, whatever you need to do to get the code. I'm not super familiar with publishing Python packages so I haven't put it up anywhere else yet. 
 
-**Important**: This script doesn't really do any error checking yet and removes files permanently. I've also only tried it on OSX El Capitan and with Python 2.7, so be careful when using it!
+**Important**: This makes the assumption that a jpg and a dng are the same if they have the same filename minus the extension. It doesn't do any fancy magic to check otherwise. This script currently only handles jpg and dng file formats. If you want to use it for other formats, it'll require a few minor edits. It also doesn't really do any error checking yet and removes files permanently. I've also only tried it on OSX El Capitan and with Python 2.7, so be careful when using it!
 
-If you like to live on the edge, you can #believe it'll work and run this command:
+Or if you like to live on the edge, you can #believe it'll work and run this command:
 
 ```
 python dedupe.py <file path to directory>
